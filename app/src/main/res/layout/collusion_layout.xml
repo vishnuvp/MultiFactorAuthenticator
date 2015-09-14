@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:background="#DDDDDD"
+        android:id="@+id/CollutionLayout">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Reconstruct the secret"
+        android:id="@+id/TVReconstructHead"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblEmailToken"
+        android:text="Email token"
+        android:layout_below="@+id/TVReconstructHead"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtEmailToken"
+        android:hint="Email token"
+        android:layout_below="@+id/lblEmailToken"
+        android:layout_alignParentLeft="true"
+         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSMSToken"
+        android:text="SMS token"
+        android:layout_below="@+id/TxtEmailToken"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtSMSToken"
+        android:hint="SMS token"
+        android:layout_below="@+id/lblSMSToken"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAppToken"
+        android:text="App token"
+        android:layout_below="@+id/TxtSMSToken"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtAppToken"
+        android:hint="App token"
+        android:layout_below="@id/lblAppToken"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reconstruct and Login"
+        android:id="@+id/BtnReconstruct"
+        android:layout_below="@+id/TxtAppToken"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:onClick="clickHandler" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dip"
+    android:background="#FEFEFE"
+    android:gravity="center_vertical"
+    android:paddingTop="0sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10sp"
+    android:paddingBottom="10sp">
+    <TextView
+        android:id="@+id/tv_un"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#444444"
+        android:text="User Name"
+        android:layout_alignParentTop="true"
+         />
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:layout_below="@+id/tv_un"
+        android:layout_marginBottom="20sp" />
+     <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:textColor="#444444"
+        android:text="Password"
+        android:layout_below="@+id/et_un"
+      />
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        android:layout_below="@+id/tv_pw"
+        />"
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@+id/et_pw"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="83dp" />
+     <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="400dip"
+        android:layout_height="100dip"
+        android:textSize="24sp"
+        android:layout_below="@id/btn_login"
+        android:textColor="#AA0000"
+        android:text=""/>
+</RelativeLayout><!-- From: file:/home/vishnu/AndroidStudioProjects/FirstApp1%20%20AsyncTaskTry/app/src/main/res/layout/activity_main.xml -->

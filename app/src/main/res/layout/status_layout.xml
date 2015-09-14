@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dip"
+    android:background="#FEFEFE"
+    android:id="@+id/StatusLayout">
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvName"
+        android:text="vishnuvp@ymail.com"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView" />
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hi "
+        android:id="@+id/textView" />
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVMailStatus"
+        android:layout_below="@+id/TVStatus"
+        android:layout_alignParentLeft="true"
+        android:background="#ffe797"
+        android:padding="10sp"
+        android:layout_margin="10sp" />
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVSMSStatus"
+        android:layout_below="@+id/TVMailStatus"
+
+        android:background="#ffe797"
+        android:padding="10sp"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVAppStatus"
+        android:layout_below="@+id/TVSMSStatus"
+
+        android:background="#ffe797"
+        android:padding="10sp"
+        android:layout_margin="10sp"/>
+
+    <TextView
+        android:textColor="#991121"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/TVStatus"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentLeft="true"
+        android:background="#ffe797"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:text="Generating secret" />
+
+</RelativeLayout>
